@@ -1,0 +1,18 @@
+    {% extends 'base.html'%}
+
+{% block content %}
+    <!-- Main -->
+    <div>
+        <div class="registry">
+            <div class="reg-content">
+                <h1>Register</h1>
+                <form action="{% url 'register' %}" method="post">
+                    {{ form }}
+                    {% csrf_token %}
+                    <button type="submit">Submit</button>
+                </form>
+                <a href="{% url 'login' %}">Log-in</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

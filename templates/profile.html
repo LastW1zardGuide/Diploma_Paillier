@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+
+        <h1 class="title">
+            User: {{ user.username }}
+        </h1>
+        <h2>IIN:{{ user.iin }}</h2>
+        <h3>Phone : {{ user.phone }}</h3>
+        <h3>Voted Status : {{ user.status }}</h3>
+    </div>
+{% endblock %}
